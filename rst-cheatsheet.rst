@@ -1,7 +1,7 @@
 .. role:: small
 
-Inline Markup
--------------
+インラインマークアップ
+----------------------
 
 Inline markup allows words and phrases within text to have character styles (like italics and boldface) and functionality (like hyperlinks).
 
@@ -61,8 +61,8 @@ __ http://docutils.sourceforge.net/docs/user/rst/quickref.html#hyperlink-targets
 
 .. _phrase reference: http://docutils.sourceforge.net/docs/user/rst/quickref.html#hyperlink-targets
 
-Escaping with Backslashes
--------------------------
+バックスラッシュによるエスケープ
+--------------------------------
 
 reStructuredText uses backslashes ("\") to override the special meaning given to markup characters and get 
 the literal characters themselves. To get a literal backslash, use an escaped backslash ("\\"). For example:
@@ -77,8 +77,8 @@ the literal characters themselves. To get a literal backslash, use an escaped ba
 |    \*escape* \``with`` "\\"                              | \*escape* \``with`` "\\"                       |
 +----------------------------------------------------------+------------------------------------------------+
 
-Lists
------
+リスト
+------
 
 +----------------------------------------------------------+------------------------------------------------------+
 | ::                                                       |                                                      |
@@ -143,8 +143,8 @@ Lists
 
    Spacer 0 4
 
-Section Structure
------------------
+章立ての構造
+------------
 
 +----------------------------------------------------------+--------------------------------------------------------+
 | ::                                                       |                                                        |
@@ -161,8 +161,8 @@ Section Structure
 |                                                          |                                                        |
 +----------------------------------------------------------+--------------------------------------------------------+
 
-Blocks
-------
+ブロック
+--------
 
 +---------------------------------------------------------------+------------------------------------------------------+
 | ::                                                            |                                                      |
@@ -248,8 +248,8 @@ Blocks
 
    PageBreak
 
-Tables
-------
+表
+--
 
 There are two syntaxes for tables in reStructuredText. Grid tables are complete but cumbersome to create. Simple 
 tables are easy to create but limited (no row spans, etc.).
@@ -285,8 +285,8 @@ tables are easy to create but limited (no row spans, etc.).
 |   =====  =====  ======                                        |   =====  =====  ======                               |
 +---------------------------------------------------------------+------------------------------------------------------+
 
-Explicit Markup
----------------
+明示的マークアップ
+------------------
 
 Explicit markup blocks are used for constructs which float (footnotes), have no direct paper-document representation 
 (hyperlink targets, comments), or require specialized processing (directives). 
@@ -432,8 +432,8 @@ They all begin with two periods and whitespace, the "explicit markup start".
 |           despite its indentation.                            |           despite its indentation.                          |
 +---------------------------------------------------------------+-------------------------------------------------------------+
 
-Credits
--------
+クレジット
+----------
 
 .. class:: tablacreditos
 
