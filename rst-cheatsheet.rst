@@ -64,7 +64,7 @@ __ http://www.planewave.org/translations/rst/quickref.html#hyperlink-targets
 バックスラッシュによるエスケープ
 --------------------------------
 
-バックスラッシュ ("\\") を マークアップの指示記号の直前に置くと、それらの意味は無視され、 元の文字自体が得られます。 バックスラッシュ文字を得るには、バックスラッシュを繰り返しします("\\\\")。 以下に例を示します。
+バックスラッシュ (``"\"``) を マークアップの指示記号の直前に置くと、それらの意味は無視され、 元の文字自体が得られます。 バックスラッシュ文字を得るには、バックスラッシュを繰り返しします(``"\\"``)。 以下に例を示します。
 
 +----------------------------------------------------------+------------------------------------------------+
 | ::                                                       |                                                |
@@ -174,55 +174,54 @@ __ http://www.planewave.org/translations/rst/quickref.html#hyperlink-targets
 +---------------------------------------------------------------+------------------------------------------------------+
 | ::                                                            |                                                      |
 |                                                               |                                                      |
-|    This is a paragraph.                                       | This is a paragraph.                                 |
+|    ここが段落です。                                           | ここが段落です。                                     |
 |                                                               |                                                      |
-|    Paragraphs line up at their left edges, and are            | Paragraphs line up at their left                     |
-|    normally separated by blank lines.                         | edges, and are normally separated                    |
-|                                                               | by blank lines.                                      |
+|    段落は、左の端を                                           | 段落は、左の端を                                     |
+|    そろえて記述します。通常、                                 | そろえて記述します。通常、                           |
+|    空行で区切られます。                                       | 空行で区切られます。                                 |
 +---------------------------------------------------------------+------------------------------------------------------+
 | ::                                                            |                                                      |
 |                                                               |                                                      |
-|    A paragraph containing only two colons indicates           |    A paragraph containing only two colons            |
-|    the following indented or quoted text is a literal         |    indicates that the following indented             |
-|    block or quoted text is a literal block.                   |    or quoted text is a literal block.                |
+|    2つのコロンだけの段落は、後続のインデントされた、          |    2つのコロンだけの段落は、後続のインデントされた、 |
+|    もしくはクオートされたテキストが                           |    もしくはクオートされたテキストが                  |
+|    整形済みブロックであることを示します。                     |    整形済みブロックであることを示します。            |
 |                                                               |                                                      |
 |    ::                                                         |    ::                                                |
 |                                                               |                                                      |
-|      Whitespace, newlines, blank lines, and  all kinds of     |      Whitespace, newlines, blank lines, and          |
-|      markup (like *this* or \this) is preserved here.         |      all kinds of markup (like *this* or             |
-|                                                               |      \this) is preserved by literal blocks.          |
-|    You can also tack the ``::`` at the end of a               |                                                      |
-|    paragraph::                                                |    You can also tack the ``::`` at the end of a      |
-|                                                               |    paragraph::                                       |
-|       It's very convenient to use this form.                  |                                                      |
-|                                                               |      It's very convenient to use this form.          |
-|    Per-line quoting can also be used for unindented           |                                                      |
-|    blocks::                                                   |    Per-line quoting can also be used for             |
-|                                                               |    unindented blocks::                               |
-|    > Useful for quotes from email and                         |                                                      |
-|    > for Haskell literate programming.                        |    > Useful for quotes from email and                |
-|                                                               |    > for Haskell literate programming.               |
+|      空白文字、改行、空行および                               |      空白文字、改行、空行および                      |
+|      ( *this* や \this などの)すべての                        |      ( *this* や \this などの)すべての               |
+|      マークアップはそのまま表示されます。                     |      マークアップはそのまま表示されます。            |
+|                                                               |                                                      |
+|    ``::`` を段落の最後に記述することも                        |    ``::`` を段落の最後に記述することも               |
+|    できます。::                                               |    できます。::                                      |
+|                                                               |                                                      |
+|       この形式はとても便利です。                              |      この形式はとても便利です。                      |
+|                                                               |                                                      |
+|    各行ごとにクオートされたブロックは、特に明示する           |    各行ごとにクオートされたブロックは、特に明示する  |
+|    こと無しに、整形済みブロックとして扱われます。::           |    こと無しに、整形済みブロックとして扱われます。::  |
+|                                                               |                                                      |
+|    > メールの引用や                                           |    > メールの引用や                                  |
+|    > Haskell言語のプログラムに有効です                        |    > Haskell言語のプログラムに有効です               |
 +---------------------------------------------------------------+------------------------------------------------------+
 | ::                                                            |                                                      |
 |                                                               |                                                      |
-|    | Line blocks are useful for addresses,                    |    | Line blocks are useful for addresses,           |
-|    | verse, and adornment-free lists.                         |    | verse, and adornment-free lists.                |
+|    | ラインブロックは、アドレスや韻文、                       |    | ラインブロックは、アドレスや韻文、              |
+|    | 装飾の不要なリストなどに対して使われます。               |    | 装飾の不要なリストなどに対して使われます。      |
 |    |                                                          |    |                                                 |
-|    | Each new line begins with a                              |    | Each new line begins with a                     |
-|    | vertical bar ("|").                                      |    | vertical bar ("|").                             |
-|    |     Line breaks and initial indents                      |    |     Line breaks and initial indents             |
-|    |     are preserved.                                       |    |     are preserved.                              |
-|    | Continuation lines are wrapped                           |    | Continuation lines are wrapped                  |
-|      portions of long lines; they begin                       |      portions of long lines; they begin              |
-|      with spaces in place of vertical bars.                   |      with spaces in place of vertical bars.          |
+|    | 各行は縦棒 ("|") ではじめます。                          |    | 各行は縦棒 ("|") ではじめます。                 |
+|    |     改行と行頭のインデントは                             |    |     改行と行頭のインデントは                    |
+|    |     そのままになります。                                 |    |     そのままになります。                        |
+|    | 長い文を複数行に別けて書くこともできます。               |    | 長い文を複数行に別けて書くこともできます。      |
+|      その場合、行頭の縦棒のところを                           |      その場合、行頭の縦棒のところを                  |
+|      空白文字にします。                                       |      空白文字にします。                              |
 +---------------------------------------------------------------+------------------------------------------------------+
 | ::                                                            |                                                      |
 |                                                               |                                                      |
-|   Block quotes are just:                                      |   Block quotes are just:                             |
+|   引用のブロックは                                            |   引用のブロックは                                   |
 |                                                               |                                                      |
-|       Indented paragraphs,                                    |       Indented paragraphs,                           |
+|       インデントした段落を書くだけです。                      |       インデントした段落を書くだけです。             |
 |                                                               |                                                      |
-|           and they may nest.                                  |           and they may nest.                         |
+|           入れ子にもできます。                                |           入れ子にもできます。                       |
 +---------------------------------------------------------------+------------------------------------------------------+
 | ::                                                            |                                                      |
 |                                                               |                                                      |
@@ -235,20 +234,20 @@ __ http://www.planewave.org/translations/rst/quickref.html#hyperlink-targets
 +---------------------------------------------------------------+------------------------------------------------------+
 | ::                                                            |                                                      |
 |                                                               |                                                      |
-|   A transition marker is a horizontal line                    |   A transition marker is a horizontal line           |
-|   of 4 or more repeated punctuation                           |   of 4 or more repeated punctuation                  |
-|   characters.                                                 |   characters.                                        |
+|   区切り線のマーカは、                                        |   区切り線のマーカは、                               |
+|   記号文字4つ以上からなる                                     |   記号文字4つ以上からなる                            |
+|   水平ラインです。                                            |   水平ラインです。                                   |
 |                                                               |                                                      |
 |   ------------                                                |   .. class:: faketrans                               |
 |                                                               |                                                      |
-|   A transition should not begin or end a                      |   +-----------+                                      |
-|   section or document, nor should two                         |   |           |                                      |
-|   transitions be immediately adjacent.                        |   +-----------+                                      |
+|   区切り線は、セクションの最初や最後に置くべきでは            |   +-----------+                                      |
+|   ありませんし、区切り線を連続してならべるのも                |   |           |                                      |
+|   避けるべきです。                                            |   +-----------+                                      |
 |                                                               |                                                      |
 |                                                               |                                                      |
-|                                                               |   A transition should not begin or end a             |
-|                                                               |   section or document, nor should two                |
-|                                                               |   transitions be immediately adjacent.               |
+|                                                               |   区切り線は、セクションの最初や最後に置くべきでは   |
+|                                                               |   ありませんし、区切り線を連続してならべるのも       |
+|                                                               |   避けるべきです。                                   |
 +---------------------------------------------------------------+------------------------------------------------------+
 
 .. raw:: pdf
