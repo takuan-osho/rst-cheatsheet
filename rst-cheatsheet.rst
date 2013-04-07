@@ -3,7 +3,7 @@
 インラインマークアップ
 ----------------------
 
-Inline markup allows words and phrases within text to have character styles (like italics and boldface) and functionality (like hyperlinks).
+インラインマークアップを行うことで、文書中の語句に文字スタイル （斜体や太字など）を設定したり、リンクなどの機能を加えたりすることが できます。
 
 +----------------------------------------------------------+------------------------------------------------+
 | ::                                                       |                                                |
@@ -64,8 +64,7 @@ __ http://docutils.sourceforge.net/docs/user/rst/quickref.html#hyperlink-targets
 バックスラッシュによるエスケープ
 --------------------------------
 
-reStructuredText uses backslashes ("\") to override the special meaning given to markup characters and get 
-the literal characters themselves. To get a literal backslash, use an escaped backslash ("\\"). For example:
+バックスラッシュ ("\\") を マークアップの指示記号の直前に置くと、それらの意味は無視され、 元の文字自体が得られます。 バックスラッシュ文字を得るには、バックスラッシュを繰り返しします("\\\\")。 以下に例を示します。
 
 +----------------------------------------------------------+------------------------------------------------+
 | ::                                                       |                                                |
@@ -251,8 +250,7 @@ the literal characters themselves. To get a literal backslash, use an escaped ba
 表
 --
 
-There are two syntaxes for tables in reStructuredText. Grid tables are complete but cumbersome to create. Simple 
-tables are easy to create but limited (no row spans, etc.).
+reStructuredText には、表（テーブル）を記述する2通りの記法があります。 グリッドテーブルは良く出来ていますが作成が若干大変です。 シンプルテーブルは作成しやすいですが、（列の結合ができないなど） 機能が制限されます。
 
 +---------------------------------------------------------------+------------------------------------------------------+
 | ::                                                            |                                                      |
@@ -288,9 +286,7 @@ tables are easy to create but limited (no row spans, etc.).
 明示的マークアップ
 ------------------
 
-Explicit markup blocks are used for constructs which float (footnotes), have no direct paper-document representation 
-(hyperlink targets, comments), or require specialized processing (directives). 
-They all begin with two periods and whitespace, the "explicit markup start".
+（脚注などの）表示位置が固定でない語句や、 （リンクやコメントなど）紙文書においては 表現されない語句や、（ディレクティブなどの）特別な処理が必要な 語句に対して、明示的マークアップが行われます。 明示的マークアップは、2つのピリオドと空白文字からはじめます。
 
 +---------------------------------------------------------------+-------------------------------------------------------------+
 | ::                                                            |                                                             |
