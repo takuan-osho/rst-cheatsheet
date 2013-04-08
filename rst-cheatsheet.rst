@@ -82,50 +82,49 @@ __ http://www.planewave.org/translations/rst/quickref.html#hyperlink-targets
 +----------------------------------------------------------+------------------------------------------------------+
 | ::                                                       |                                                      |
 |                                                          |                                                      |
-|    - This is item 1. A blank line before the first       |    - This is item 1. A blank line before the first   |
-|      and last items is required.                         |      and last items is required.                     |
-|    - This is item 2                                      |    - This is item 2                                  |
+|    - アイテム 1 です。最初のアイテムの前                 |    - アイテム 1 です。最初のアイテムの前             |
+|      および最後のアイテムの後には空行が必要です。        |      および最後のアイテムの後には空行が必要です。    |
+|    - アイテム 2 です                                     |    - アイテム 2 です                                 |
 |                                                          |                                                      |
-|    - Item 3: blank lines between items are optional.     |    - Item 3: blank lines between items are optional. |
-|    - Item 4: Bullets are "-", "*" or "+".                |    - Item 4: Bullets are "-", "*" or "+".            |
-|      Continuing text must be aligned after the bullet    |      Continuing text must be aligned after the bullet|
-|      and whitespace.                                     |      and whitespace.                                 |
+|    - アイテム 3 です。アイテム間の空行は任意です。       |    - アイテム 3 です。アイテム間の空行は任意です。   |
+|    - リスト記号は"-" および "*", "+" が使用できます。    |    - リスト記号は"-" および "*", "+" が使用できます。|
+|      複数行にわたる場合は、記号と空白文字の後に、        |      複数行にわたる場合は、記号と空白文字の後に、    |
+|      左端をそろえて記述します。                          |      左端をそろえて記述します。                      |
 +----------------------------------------------------------+------------------------------------------------------+
 | ::                                                       |                                                      |
 |                                                          |                                                      |
-|    3. This is the first item                             |    3. This is the first item                         |
-|    4. This is the second item                            |    4. This is the second item                        |
-|    5. Enumerators are arabic numbers,                    |    5. Enumerators are arabic numbers,                |
-|       single letters, or roman numerals                  |       single letters, or roman numerals              |
-|    6. List items should be sequentially                  |    6. List items should be sequentially              |
-|       numbered, but need not start at 1                  |       numbered, but need not start at 1              |
-|       (although not all formatters will                  |       (although not all formatters will              |
-|       honour the first index).                           |       honour the first index).                       |
-|    #. This item is auto-enumerated                       |    #. This item is auto-enumerated                   |
+|    3. はじめのアイテム                                   |    3. はじめのアイテム                               |
+|    4. 次のアイテム                                       |    4. 次のアイテム                                   |
+|    5. 番号は、アラビア数字、単一の英字、もしくは         |    5. 番号は、アラビア数字、単一の英字、もしくは     |
+|       ローマ数字が使用できます。                         |       ローマ数字が使用できます。                     |
+|    6. アイテムは、連続した数で番号付けするべきです。     |    6. アイテムは、連続した数で番号付けするべきです。 |
+|       ただし、必ずしも１からはじめる必要はありません     |       ただし、必ずしも１からはじめる必要はありません |
+|       （フォーマッタによっては任意の番号からの           |       （フォーマッタによっては任意の番号からの       |
+|       開始を適切に扱えないこともあります。)              |       開始を適切に扱えないこともあります。)          |
+|    #. このアイテムは自動的に番号付けされています。       |    #. このアイテムは自動的に番号付けされています。   |
 +----------------------------------------------------------+------------------------------------------------------+
 | ::                                                       |                                                      |
 |                                                          |                                                      |
-|    what                                                  |    what                                              |
-|      Definition lists associate a term with              |      Definition lists associate a term with          |
-|      a definition.                                       |      a definition.                                   |
+|    それは何?                                             |    それは何?                                         |
+|      定義リストは、用語とその定義を示します。            |      定義リストは、用語とその定義を示します。        |
 |                                                          |                                                      |
-|    how                                                   |    how                                               |
-|      The term is a one-line phrase, and the              |      The term is a one-line phrase, and the          |
-|      definition is one or more paragraphs or             |      definition is one or more paragraphs or         |
-|      body elements, indented relative to the             |      body elements, indented relative to the         |
-|      term. Blank lines are not allowed                   |      term. Blank lines are not allowed               |
-|      between term and definition.                        |      between term and definition.                    |
+|    どのようにして?                                       |    どのようにして?                                   |
+|      「用語」は 1 行のテキストです。                     |      「用語」は 1 行のテキストです。                 |
+|      「定義」は、段落などのボディ要素で、                |      「定義」は、段落などのボディ要素で、            |
+|      複数の段落を記述することもできます。                |      複数の段落を記述することもできます。            |
+|      用語との間に空行を入れないで、右側に                |      用語との間に空行を入れないで、右側に            |
+|      インデントさせます。                                |      インデントさせます。                            |
 +----------------------------------------------------------+------------------------------------------------------+
 | ::                                                       |                                                      |
 |                                                          |                                                      |
-|    :Authors:                                             |    :Authors:                                         |
+|    :著者:                                                |    :著者:                                            |
 |        Tony J. (Tibs) Ibbs,                              |        Tony J. (Tibs) Ibbs,                          |
 |        David Goodger                                     |        David Goodger                                 |
 |                                                          |                                                      |
-|        (and sundry other good-natured folks)             |        (and sundry other good-natured folks)         |
+|        (および多くの親切な方々)                          |        (および多くの親切な方々)                      |
 |                                                          |                                                      |
-|    :Version: 1.0 of 2001/08/08                           |    :Version: 1.0 of 2001/08/08                       |
-|    :Dedication: To my father.                            |    :Dedication: To my father.                        |
+|    :バージョン: 1.0 of 2001/08/08                        |    :バージョン: 1.0 of 2001/08/08                    |
+|    :献呈: 我が父へ                                       |    :献呈: 我が父へ                                   |
 +----------------------------------------------------------+------------------------------------------------------+
 | ::                                                       |                                                      |
 |                                                          |                                                      |
