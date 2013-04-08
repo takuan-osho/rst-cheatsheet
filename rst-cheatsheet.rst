@@ -297,97 +297,94 @@ reStructuredText には、表（テーブル）を記述する2通りの記法�
 +---------------------------------------------------------------+-------------------------------------------------------------+
 | ::                                                            |                                                             |
 |                                                               |                                                             |
-|   Footnote references, like [5]_.                             |   Footnote references, like [5]_.                           |
-|   Note that footnotes may get                                 |   Note that footnotes may get                               |
-|   rearranged, e.g., to the bottom of                          |   rearranged, e.g., to the bottom of                        |
-|   the "page".                                                 |   the "page".                                               |
+|   脚注参照 [5]_.                                              |   脚注参照 [5]_.                                            |
+|   脚注は、ページの下部等へ                                    |   脚注は、ページの下部等へ                                  |
+|   まとめて配置されます。                                      |   まとめて配置されます。                                    |
 |                                                               |                                                             |
-|   .. [5] A numerical footnote. Note                           |   .. [5] A numerical footnote. Note                         |
-|      there's no colon after the ``]``.                        |      there's no colon after the ``]``.                      |
+|   .. [5] 番号つき脚注。                                       |   .. [5] 番号つき脚注。                                     |
+|      ] の後にはコロンを付けないこと。                         |      ] の後にはコロンを付けないこと。                       |
 +---------------------------------------------------------------+-------------------------------------------------------------+
 | ::                                                            |                                                             |
 |                                                               |                                                             |
-|   Autonumbered footnotes are                                  |   Autonumbered footnotes are                                |
-|   possible, like using [#]_ and [#]_.                         |   possible, like using [#]_ and [#]_.                       |
+|   次の様にすれば、脚注の番号を自動に振ることもできます。      |   次の様にすれば、脚注の番号を自動に振ることもできます。    |
+|   [#]_ および [#]_ 。                                         |   [#]_ および [#]_ 。                                       |
 |                                                               |                                                             |
-|   .. [#] This is the first one.                               |   .. [#] This is the first one.                             |
-|   .. [#] This is the second one.                              |   .. [#] This is the second one.                            |
+|   .. [#] 第一番目                                             |   .. [#] 第一番目                                           |
+|   .. [#] 第二番目                                             |   .. [#] 第二番目                                           |
 |                                                               |                                                             |
-|   They may be assigned 'autonumber                            |   They may be assigned 'autonumber                          |
-|   labels' - for instance,                                     |   labels' - for instance,                                   |
-|   [#fourth]_ and [#third]_.                                   |   [#fourth]_ and [#third]_.                                 |
+|   番号付用のラベルを記述できます。例、                        |   番号付用のラベルを記述できます。例、                      |
+|   [#fourth]_ および [#third]_.                                |   [#fourth]_ および [#third]_.                              |
 |                                                               |                                                             |
-|   .. [#third] a.k.a. third_                                   |   .. [#third] a.k.a. third_                                 |
+|   .. [#third] 別名. third_                                    |   .. [#third] 別名. third_                                  |
 |                                                               |                                                             |
-|   .. [#fourth] a.k.a. fourth_                                 |   .. [#fourth] a.k.a. fourth_                               |
+|   .. [#fourth] 別名. fourth_                                  |   .. [#fourth] 別名. fourth_                                |
 +---------------------------------------------------------------+-------------------------------------------------------------+
 | ::                                                            |                                                             |
 |                                                               |                                                             |
-|   Auto-symbol footnotes are also                              |   Auto-symbol footnotes are also                            |
-|   possible, like this: [*]_ and [*]_.                         |   possible, like this: [*]_ and [*]_.                       |
+|   脚注に記号を自動でつけることもできます。                    |   脚注に記号を自動でつけることもできます。                  |
+|   [*]_ および [*]_ 。                                         |   [*]_ および [*]_ 。                                       |
 |                                                               |                                                             |
-|   .. [*] This is the first one.                               |   .. [*] This is the first one.                             |
-|   .. [*] This is the second one.                              |   .. [*] This is the second one.                            |
+|   .. [*] 第一番目の記号つき脚注                               |   .. [*] 第一番目の記号つき脚注                             |
+|   .. [*] これは2番目                                          |   .. [*] これは2番目                                        |
 +---------------------------------------------------------------+-------------------------------------------------------------+
 | ::                                                            |                                                             |
 |                                                               |                                                             |
-|   Citation references, like [CIT2002]_.                       |   Citation references, like [CIT2002]_.                     |
-|   Note that citations may get                                 |   Note that citations may get                               |
-|   rearranged, e.g., to the bottom of                          |   rearranged, e.g., to the bottom of                        |
-|   the "page".                                                 |   the "page".                                               |
+|   出典参照 [CIT2002]_ 。                                      |   出典参照 [CIT2002]_ 。                                    |
+|   出典は、ページの下部等へまとめて配置されます。              |   出典は、ページの下部等へまとめて配置されます。            |
 |                                                               |                                                             |
-|   .. [CIT2002] A citation                                     |   .. [CIT2002] A citation                                   |
-|      (as often used in journals).                             |      (as often used in journals).                           |
+|   .. [CIT2002] とある出典                                     |   .. [CIT2002] とある出典                                   |
+|      (たとえば雑誌など)                                       |      (たとえば雑誌など)                                     |
 |                                                               |                                                             |
-|   Citation labels contain alphanumerics,                      |   Citation labels contain alphanumerics,                    |
-|   underlines, hyphens and fullstops.                          |   underlines, hyphens and fullstops.                        |
-|   Case is not significant.                                    |   Case is not significant.                                  |
+|   出典のラベルは、英数字、アンダーライン、ハイフン            |   出典のラベルは、英数字、アンダーライン、ハイフン          |
+|   およびピリオドで構成されます。                              |   およびピリオドで構成されます。                            |
+|   大小文字は区別されません。                                  |   大小文字は区別されません。                                |
 |                                                               |                                                             |
-|   Given a citation like [this]_, one                          |   Given a citation like [this]_, one                        |
-|   can also refer to it like this_.                            |   can also refer to it like this_.                          |
+|   出典参照が [this]_ と書かれた場合、                         |   出典参照が [this]_ と書かれた場合、                       |
+|   this_ とすれば出典を参照できます。                          |   this_ とすれば出典を参照できます。                        |
 |                                                               |                                                             |
-|   .. [this] here.                                             |   .. [this] here.                                           |
+|   .. [this] こちら                                            |   .. [this] こちら                                          |
 +---------------------------------------------------------------+-------------------------------------------------------------+
 | ::                                                            |                                                             |
 |                                                               |                                                             |
-|   External hyperlinks, like Python_.                          |   External hyperlinks, like Python_.                        |
+|   外部リンクの例、 Python_.                                   |   外部リンクの例、 Python_.                                 |
 |                                                               |                                                             |
 |   .. _Python: http://www.python.org/                          |   .. _Python: http://www.python.org/                        |
 +---------------------------------------------------------------+-------------------------------------------------------------+
 | ::                                                            |                                                             |
 |                                                               |                                                             |
-|   External hyperlinks, like `Python                           |   External hyperlinks, like `Python                         |
+|   外部リンクの例、 `Python                                    |   外部リンクの例、 `Python                                  |
 |   <http://www.python.org/>`_.                                 |   <http://www.python.org/>`_.                               |
 +---------------------------------------------------------------+-------------------------------------------------------------+
 | ::                                                            |                                                             |
 |                                                               |                                                             |
-|   Internal crossreferences, like example_.                    |   Internal crossreferences, like example_.                  |
+|   内部相互参照の例、 example_.                                |   内部相互参照の例、 example_.                              |
 |                                                               |                                                             |
 |   .. _example:                                                |   .. _example:                                              |
 |                                                               |                                                             |
-|   This is an example crossreference target.                   |   This is an example crossreference target.                 |
+|   ここが、内部相互参照の例のターゲットになります。            |   ここが、内部相互参照の例のターゲットになります。          |
 +---------------------------------------------------------------+-------------------------------------------------------------+
 | ::                                                            |                                                             |
 |                                                               |                                                             |
-|   Python_ is `my favourite                                    |   Python_ is `my favourite                                  |
-|   programming language`__.                                    |   programming language`__.                                  |
+|   Python_ は、                                                |   Python_ は、                                              |
+|   `私のお気に入りのプログラム言語`__ です。                   |   `私のお気に入りのプログラム言語`__ です。                 |
 |                                                               |                                                             |
 |   .. _Python: http://www.python.org/                          |   .. _Python: http://www.python.org/                        |
 |                                                               |                                                             |
 |   __ Python_                                                  |   __ Python_                                                |
 +---------------------------------------------------------------+-------------------------------------------------------------+
-| ::                                                            |   .. _titles are targets, too:                              |
+| ::                                                            |   .. _タイトルもターゲット:                                 |
 |                                                               |   .. class:: faketitle                                      |
-|   Titles are targets, too                                     |                                                             |
-|   =======================                                     |   Titles are targets, too                                   |
+|   タイトルもターゲット                                        |                                                             |
+|   =======================                                     |   タイトルもターゲット                                      |
 |                                                               |                                                             |
-|   Implict references, like `Titles are targets, too`_.        |   Implict references, like                                  |
-|                                                               |   `Titles are targets, too`_.                               |
+|   暗黙ターゲットの例、                                        |   暗黙ターゲットの例、                                      |
+|   `タイトルもターゲット`_.                                    |   `タイトルもターゲット`_.                                  |
 +---------------------------------------------------------------+-------------------------------------------------------------+
 |                                                                                                                             |
-|Directives are a general-purpose extension mechanism, a way of adding support for new constructs without adding              |
-|new syntax. For a description of all standard directives, see reStructuredText Directives (http://is.gd/2Ecqh).              |
+| ディレクティブは、汎用の拡張機構で、ひとつの記法で様々な要素をサポートできるようにするための手段です。                      |
+| 標準でサポートされているディレクティブについては、 reStructuredTextディレクティブ_ を参照してください。                     |
 |                                                                                                                             |
+| .. _reStructuredTextディレクティブ: http://docutils.sourceforge.net/docs/ref/rst/directives.html                            |
 +---------------------------------------------------------------+-------------------------------------------------------------+
 | ::                                                            |                                                             |
 |                                                               |                                                             |
@@ -399,39 +396,37 @@ reStructuredText には、表（テーブル）を記述する2通りの記法�
 +---------------------------------------------------------------+-------------------------------------------------------------+
 |                                                                                                                             |
 |                                                                                                                             |
-| Substitutions are like inline directives, allowing graphics and arbitrary constructs within text.                           |
+| 「代入」は、インラインなディレクティブとでも呼べるもので、 任意の要素をテキスト中に挿入することができます。                 |
 |                                                                                                                             |
 +---------------------------------------------------------------+-------------------------------------------------------------+
 | ::                                                            |                                                             |
 |                                                               |                                                             |
-|   The |biohazard| symbol must be used on containers used to   |   The |biohazard| symbol must be used on containers used to |
-|   dispose of medical waste.                                   |   dispose of medical waste.                                 |
+|   |biohazard| シンボルは、                                    |   |biohazard| シンボルは、                                  |
+|   医療廃棄物を収めたコンテナに表示されるマークです。          |   医療廃棄物を収めたコンテナに表示されるマークです。        |
 |                                                               |                                                             |
 |   .. |biohazard| image:: biohazard.png                        |   .. |biohazard| image:: biohazard.png                      |
 |      :align: middle                                           |      :align: middle                                         |
 |      :width: 12                                               |      :width: 12                                             |
 +---------------------------------------------------------------+-------------------------------------------------------------+
 |                                                                                                                             |
-| Any text which begins with an explicit markup start but doesn't use the syntax of any of the constructs above, is a comment.|
+| 明示的マークアップの後に記述されるテキストで、 上記の要素のどれにも該当しないものは、コメントになります。                   |
 |                                                                                                                             |
 +---------------------------------------------------------------+-------------------------------------------------------------+
 | ::                                                            |                                                             |
 |                                                               |                                                             |
-|   .. This text will not be shown                              |   .. This text will not be shown                            |
-|      (but, for instance, in HTML might be                     |      (but, for instance, in HTML might be                   |
-|      rendered as an HTML comment)                             |      rendered as an HTML comment)                           |
+|   .. このテキストは表示されません                             |   .. このテキストは表示されません                           |
+|      (しかし、たとえばHTMLでは、                              |      (しかし、たとえばHTMLでは、                            |
+|      コメントとして描画されます。)                            |      コメントとして描画されます。)                          |
 +---------------------------------------------------------------+-------------------------------------------------------------+
 | ::                                                            |                                                             |
 |                                                               |                                                             |
-|   An "empty comment" does not                                 |   An "empty comment" does not                               |
-|   consume following blocks.                                   |   consume following blocks.                                 |
-|   (An empty comment is ".." with                              |   (An empty comment is ".." with                            |
-|   blank lines before and after.)                              |   blank lines before and after.)                            |
+|   空のコメントの後のブロックは                                |   空のコメントの後のブロックは                              |
+|   コメントにはなりません。                                    |   コメントにはなりません。                                  |
 |                                                               |                                                             |
 |   ..                                                          |   ..                                                        |
 |                                                               |                                                             |
-|           So this block is not "lost",                        |           So this block is not "lost",                      |
-|           despite its indentation.                            |           despite its indentation.                          |
+|           ですので、このブロックはインデント                  |           ですので、このブロックはインデント                |
+|           されていますが、表示されます。                      |           されていますが、表示されます。                    |
 +---------------------------------------------------------------+-------------------------------------------------------------+
 
 クレジット
